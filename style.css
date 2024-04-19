@@ -489,6 +489,7 @@ section {
     overflow: hidden;
     border-radius: 8px;
     cursor: pointer;
+    padding: 10px;
 }
 .row img{
     width: 100%;
@@ -519,7 +520,18 @@ section {
     font-weight: 600;
     margin-bottom: 15px;
 }
+.layer h5 span{
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
 .layer p{
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+.layer p li{
     color: #000;
     font-size: 1rem;
     line-height: 1.8;
