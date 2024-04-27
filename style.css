@@ -50,7 +50,7 @@ body {
     position: relative;
     width: 100%;
     justify-content: space-between;
-    height: 100vh;
+    height: 150vh;
     /* background-image: url(./img.jpeg); */
     background-color: black;
     background-repeat: no-repeat;
@@ -60,6 +60,12 @@ body {
     align-items: center;
     padding: 70px 10% 0;
 }
+/* @media screen and (max-width:600px) {
+    .home{
+        height: 150vh;
+    }
+    
+} */
 .home-container {
     max-width: 600px;
 }
@@ -114,6 +120,11 @@ body {
     background-color: #0ef;
     color: #081b29;
     box-shadow: 0 0 20px #0ef;
+}
+.home img {
+    border-radius: 15px;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef;
 }
 .btn-box {
     display: inline-block;
@@ -286,7 +297,7 @@ section {
     border-radius: 10px;
     width: 100%;
     height: 5px;
-    background-color: #000;
+    background-color: #000000;
     animation: animate 1s cubic-bezier(1,0,0,5,1) forwards;
     transform: scaleX(0);
     transform-origin: left;
@@ -305,25 +316,25 @@ section {
     transform: scaleX(0);
     transform-origin: left;
 }
-.progress-line .html span{
+.progress-line.html span{
     width: 90%;
 }
-.progress-line .css span{
+.progress-line.css span{
     width: 90%;
 }
-.progress-line .bootstrap span{
+.progress-line.bootstrap span{
     width: 80%;
 }
-.progress-line .javascript span{
+.progress-line.javascript span{
     width: 60%;
 }
-.progress-line .node span{
+.progress-line.node span{
     width: 70%;
 }
-.progress-line .react span{
+.progress-line.react span{
     width: 70%;
 }
-.progress-line .sqlite span{
+.progress-line.sqlite span{
     width: 80%;
 }
 .progress-line span::after{
