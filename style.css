@@ -434,12 +434,14 @@ section {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    /* margin: 5px; */
     justify-content: space-evenly;
     align-items: flex-start;
 }
 .radial-bars .radial-bar {
     width: 50%;
     height: 170px;
+    /* margin: 1px; */
     margin-bottom: 10px;
     position: relative;
 }
