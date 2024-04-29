@@ -98,6 +98,33 @@ body {
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
 }
+.link-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    margin: 5px;
+    background: #0ef;
+    border: 0;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef;
+}
+.link-btn a{
+    text-decoration: none;
+}
+.link-btn:hover{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan;
+    
+}
 .home-sci a {
     display: inline-flex;
     justify-content: center;
@@ -188,7 +215,8 @@ body {
 .sub-title {
     text-align: center;
     font-size: 60px;
-    padding-bottom: 70px;
+    padding-top: 40px;
+    padding-bottom: 50px;
 }
 .sub-title span {
     color: #0ef;
@@ -259,9 +287,11 @@ section {
     flex-wrap: wrap;
 }
 .container1 {
+    /* display: flex; */
     width: 600px;
     height: 500px;
     padding: 75px 90px;
+    /* padding: 10px; */
     margin-left: 120px;
 }
 .heading1 {
@@ -270,6 +300,9 @@ section {
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
     margin-bottom: 50px;
+}
+.heading2 {
+    padding-top: 130px;
 }
 .bar {
     font-size: 23px;
@@ -299,43 +332,48 @@ section {
     height: 5px;
     background-color: #000000;
     animation: animate 1s cubic-bezier(1,0,0,5,1) forwards;
-    transform: scaleX(0);
+    /* transform: scaleX(0); */
     transform-origin: left;
 }
-@keyframes animate {
-    100%{
-        transform: scaleX(1);
-    }
-}
-.Technical-bars .bar .progress-line span {
+
+.progress-line span {
     height: 100%;
     background-color: #0ef;
     position: absolute;
     border-radius: 10px;
-    animation: animate 1s 1s cubic-bezier(1,0,0,5,1) forwards;
-    transform: scaleX(0);
+    animation: animate 1s cubic-bezier(1,0,0,5,1) forwards;
+    /* transform: scaleX(0); */
     transform-origin: left;
+    width: calc(var(--width) * 1%); 
 }
-.progress-line.html span{
+@keyframes animate {
+    100%{
+        transform: scaleX(1.1);
+    }
+}
+.html span {
     width: 90%;
 }
-.progress-line.css span{
+.css span{
     width: 90%;
 }
-.progress-line.bootstrap span{
+.bootstrap span{
     width: 80%;
 }
-.progress-line.javascript span{
+.javascript span{
     width: 60%;
 }
-.progress-line.node span{
+.node span{
+    width: 60%;
+}
+.react span{
+    width: 60%;
+}
+.sqlite span{
     width: 70%;
 }
-.progress-line.react span{
-    width: 70%;
-}
-.progress-line.sqlite span{
-    width: 80%;
+.python span{
+    width: 50%;
 }
 .progress-line span::after{
     position: absolute;
@@ -349,26 +387,29 @@ section {
     animation: showText 0.5s 1.5s linear forwards;
     opacity: 0;
 }
-.progress-line.html span::after{
+.html span::after{
     content: "90%";
 }
-.progress-line.css span::after{
+.css span::after{
     content: "90%";
 }
-.progress-line.bootstrap span::after{
+.bootstrap span::after{
     content: "80%";
 }
-.progress-line.javascript span::after{
+.javascript span::after{
     content: "60%";
 }
-.progress-line.node span::after{
+.node span::after{
+    content: "60%";
+}
+.react span::after{
+    content: "60%";
+}
+.sqlite span::after{
     content: "70%";
 }
-.progress-line.react span::after{
-    content: "70%";
-}
-.progress-line.sqlite span::after{
-    content: "80%";
+.python span::after{
+    content: "50%";
 }
 .progress-line span::before{
     content: "";
