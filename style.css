@@ -50,7 +50,7 @@ body {
     position: relative;
     width: 100%;
     justify-content: space-between;
-    height: 150vh;
+    height: 140vh;
     /* background-image: url(./img.jpeg); */
     background-color: black;
     background-repeat: no-repeat;
@@ -149,6 +149,7 @@ body {
     box-shadow: 0 0 20px #0ef;
 }
 .home img {
+    height: 300px;
     border-radius: 15px;
     box-shadow: 0 0 5px #0ef,
     0 0 25px #0ef;
@@ -292,7 +293,7 @@ section {
     height: 500px;
     padding: 75px 90px;
     /* padding: 10px; */
-    margin-left: 120px;
+    /* margin-left: 120px; */
 }
 .heading1 {
     text-align: center;
@@ -302,7 +303,7 @@ section {
     margin-bottom: 50px;
 }
 .heading2 {
-    padding-top: 130px;
+    padding-top: 120px;
 }
 .bar {
     font-size: 23px;
@@ -531,6 +532,7 @@ section {
     font-size: 60px;
     line-height: 1;
     text-align: center;
+    padding-bottom: 10px;
 }
 .main-text h2 span{
     color: #0ef;
