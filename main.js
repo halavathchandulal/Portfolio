@@ -5,3 +5,12 @@ var typed = new Typed('.text', {
     backDelay: 1000,
     loop: true
   });
+
+  var link=document.getElementById("link-btn2")
+  
+  function handelLinks(){
+    link.addEventListener('click', function() {
+      window.open("./Chandu.pdf","_self")
+    });
+  }
+  handelLinks()
